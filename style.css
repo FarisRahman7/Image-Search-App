@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+}
+h1{
+    font-size: 2.5rem;
+    text-shadow: 1px 3px rgba(170, 200, 166, 0.635);
+    text-align: center;
+    margin:40px 20px 0 0;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+    margin-bottom: 60px;
+}
+#searchInput{
+    width:60%;
+    max-width: 400px;
+    height:35px;
+    border:none;
+    box-shadow:0px 0px 3px rgb(135, 134, 134);
+    border-radius: 3px;
+}
+#searchButton{
+    margin-left: 14px;
+    height:36px;
+    width:75px;
+    cursor:pointer;
+    border:none;
+    color: white;
+    border-radius: 3px;
+    box-shadow:0px 0px 3px rgb(135, 134, 134);
+    background-color:rgb(69, 139, 86); ;
+}
+.searchResults{
+    display:flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    border-radius: 3px;
+}
+.searchResult{
+    margin:10px;
+    margin-bottom: 20px;
+    border: none;
+    width:350px;
+    height:290px;
+    border-radius: 5px;
+    box-shadow:0px 0px 3px rgba(172, 170, 170, 0.554);
+    align-items: center;
+    /* border : 2px solid black */
+}
+.searchResult img{
+    height:230px;
+    width:350px;
+    overflow: hidden;
+    border-radius: 5px;
+    object-fit: cover;
+    transition:all 0.4s ease-out;
+
+}
+.searchResult img:hover{
+    opacity:0.8;
+}
+.searchResult a{
+    color: rgba(0, 0, 0, 0.732);
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    padding: 10px;
+}
+.showMore{
+    display: block;
+    border:none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow:0px 0px 3px rgb(135, 134, 134);
+    background-color: rgb(81, 150, 207);
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .searchResult{
+        width:45%;
+    }
+    .searchResults{
+        padding:20px;
+    }
+}
+@media screen and (max-width:480px) {
+    .searchResult{
+        width:100%;
+    }
+    .searchResults{
+        padding:10px;
+    }
+}
